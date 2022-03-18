@@ -22,7 +22,7 @@ jobs:
        curl -OL https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-linux-x64.tgz
        ls
        mkdir -p pdfium
-       tar xzvf pdfium-linux-x64.tgz　-C pdfium
+       tar xzvf pdfium-linux-x64.tgz -C pdfium
        ls ./pdfium
 
     - name: Configure CMake
