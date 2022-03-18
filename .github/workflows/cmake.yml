@@ -21,6 +21,8 @@ jobs:
       run: |
        curl -OL https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-linux-x64.tgz
        mkdir -p ./pdfium
+       ls ./pdfium
+       echo "debug"
        tar xzvf pdfium-linux-x64.tgz　-C ./pdfium
        ls ./pdfium
 
