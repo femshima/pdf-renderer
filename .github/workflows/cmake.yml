@@ -20,7 +20,9 @@ jobs:
     - name: Download PDFium
       run: |
        curl -OL https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-linux-x64.tgz
+       mkdir -p ./pdfium
        tar xzvf pdfium-linux-x64.tgz　-C ./pdfium
+       ls ./pdfium
 
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
