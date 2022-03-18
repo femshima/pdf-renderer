@@ -20,7 +20,8 @@ jobs:
     - name: Download PDFium
       run: |
        curl -OL https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-linux-x64.tgz
-       mkdir -p ./pdfium
+       ls
+       mkdir -p pdfium
        tar xzvf pdfium-linux-x64.tgz　-C pdfium
        ls ./pdfium
 
